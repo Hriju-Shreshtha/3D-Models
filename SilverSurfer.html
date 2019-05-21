@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
+    <title>SilverSurfer</title>
+</head>
+<body>
+
+<a-scene fog="type: exponential; color:#000">
+        
+  <a-assets>
+    <img id="sky" src="https://cdn.glitch.com/4bdc937e-543e-4b0b-ae40-27afe346404a%2Fnightsky.jpg?1491096117462">
+    
+</a-assets>
+  <a-sky src="#sky"></a-sky>
+  <a-entity rotation="2.9031771479278814 -41.65345874821572 3.351803101515316" position="0.36316 0.73979 -1.78476">
+    <a-entity id="ship2" gltf-model="ship2/scene.gltf" scale="0.075 0.075 0.075" rotation="20 0 0" position="0 4.02322 -9.69338"></a-entity>
+    <a-entity id="L1" class="ship1" gltf-model="ship1/scene.gltf" rotation="-10 200 0" scale="0.5 0.5 0.5" position="-5.15545 1.03627 -8.93706"></a-entity>
+    <a-entity id="L2" class="ship1" gltf-model="ship1/scene.gltf" rotation="-9.999832398418258 -174.00613646564074 0" scale="0.5 0.5 0.5" position="-1.69775 1.07551 -9.22633"></a-entity>
+    <a-entity id="R1" class="ship1" gltf-model="ship1/scene.gltf" rotation="-10 -200 0" scale="0.5 0.5 0.5" position="5.41702 1.03627 -8.93706"></a-entity>
+    <a-entity id="R2" class="ship1" gltf-model="ship1/scene.gltf" rotation="-9.999832398418258 171.077176216932 0" scale="0.5 0.5 0.5" position="1.74215 1.07551 -9.22633"></a-entity>
+    <a-entity id="TL1" class="ship1" gltf-model="ship1/scene.gltf" rotation="-14.022569078031768 -145.60691039218636 -2.223649202902725" scale="0.5 0.5 0.5" position="-6.552 3.745 -9.602"></a-entity>
+    <a-entity id="TR1" class="ship1" gltf-model="ship1/scene.gltf" rotation="-14.766841253906708 146.36034989278338 3.2034070325764326" scale="0.5 0.5 0.5" position="6.55246 3.74536 -9.60175"></a-entity>
+    <a-entity id="SS" gltf-model="silversurfer/scene.gltf" scale="0.4 0.4 0.4" rotation="19.635263639133314 -172.19902757979816 0.6073352628386727"></a-entity>
+    <a-entity id="1" light="intensity: 10; castShadow: true; type: point"></a-entity>
+    <a-entity id="2" light="intensity: 10; castShadow: true; type: point" position="-4 0 0"></a-entity>
+    <a-entity id="3" light="intensity: 10; castShadow: true; type: point" position="4 0 0"></a-entity>
+    <a-entity id="4" light="intensity: 10; castShadow: true; type: point" position="0.11893 7.31856 -3.32133"></a-entity>
+  </a-entity>
+  <a-entity camera="" position="3.759308144320099 3.09329 1.3103523704467797" wasd-controls="" rotation="-15.584452027558399 21.77239621497129 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
+</a-scene>
+</body>
+</html> 
